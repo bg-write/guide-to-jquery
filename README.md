@@ -11,6 +11,8 @@
 * style
 * getAttribute(), setAttribute() & hasAttribute()
 * classList: add(), remove(), toggle(), contains() & replace()
+* addEventListener()
+* createElement()
 
 ### DOM Manipulation with jQuery
 * TBD

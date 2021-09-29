@@ -43,9 +43,27 @@ divEl5.classList.replace('class3', 'updated-class-3');
 // Create an Event Listener, and create a new element with that same Event Listener.
 const btn = document.querySelector('button');
 btn.addEventListener('click', function () {
-	alert('You clicked the button! Check your console, and you\'ll see that you also created a new div.');
+	alert(
+		"You clicked the button! Check your console, and you'll see that you also created a new div."
+	);
 	const divEl6 = document.createElement('div');
 	console.log(divEl6);
 });
 
 // jQuery DOM manipulation
+// Getting an element by its ID like "getElementsById()".
+// Manipulating the HTML like "innerHTML".
+$(function () {
+	$('#jquery-element').html(
+		'We selected <b>this</b> div by its ID, and then we update its content with "html".'
+	);
+});
+
+// Getting an element by its ID, class, or element type like "querySelector()", "querySelectorAll()", and "classList".
+// Manipulating the CSS like "style"
+// And manipulate its Attributes, like "setAttribute()", "getAttribute()", and "hasAttribute()" .. you can chain all these methods together!
+$(function () {
+	$('#jquery-element, .jquery-element, h3')
+		.attr('role', 'presentation')
+		.css({ color: 'red' });
+});
