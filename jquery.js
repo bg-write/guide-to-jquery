@@ -40,4 +40,12 @@ divEl5.classList.toggle('class2');
 divEl5.classList.contains('class3'); // returns 'true'
 divEl5.classList.replace('class3', 'updated-class-3');
 
+// Create an Event Listener, and create a new element with that same Event Listener.
+const btn = document.querySelector('button');
+btn.addEventListener('click', function () {
+	alert('You clicked the button! Check your console, and you\'ll see that you also created a new div.');
+	const divEl6 = document.createElement('div');
+	console.log(divEl6);
+});
+
 // jQuery DOM manipulation
