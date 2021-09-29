@@ -2,8 +2,18 @@
 
 ## Topics Covered
 
-* DOM manipulation with and without jQuery
+### DOM Manipulation without jQuery
+* getElementById()
+* querySelector()
+* querySelectorAll()
+* innerHTML
+* textContent
+* style
+* getAttribute(), setAttribute() & hasAttribute()
+* classList: add(), remove(), toggle(), contains() & replace()
 
-## Great jQuery Videos To Watch
+### DOM Manipulation with jQuery
+* TBD
 
+## Great jQuery Videos, Tutorials & Resources
 * TBD

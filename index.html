@@ -4,20 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>jQuery</title>
+		<title>Practice with jQuery</title>
 		<!-- Add jQuery to your web page: https://developers.google.com/speed/libraries/ -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script defer src="jquery.js"></script>
 	</head>
 	<body>
 		<h1>DOM Manipulation w/o jQuery</h1>
-		<div id="get-element-by-id">idEl</div>
-		<div class="query-selector">classEl</div>
-		<p>pEl 1</p>
-		<p>pEl 2</p>
+		<div id="get-element-by-id">getElementById('get-element-by-id')</div>
+		<div class="query-selector">querySelector('.query-selector')</div>
+		<p>querySelectorAll('p')</p>
+		<p>querySelectorAll('p')</p>
 		<div id="inner-HTML">divEl</div>
-    <div id="text-content">divEl</div>
-    <hr>
-    <h1>DOM Manipulation with jQuery</h1>
+		<div id="text-content">divEl</div>
+		<div id="style">We used 'style' to update this div's content to blue.</div>
+		<div id="attribute-id">
+			We used 'getAttribute' to return this element's class, 'setAttribute' to
+			set this element's attributes, and 'hasAttribute' to check if this element
+			has the specified attribute.
+		</div>
+		<div id="class-list">
+			We use 'classList' to manipulate this element's classes: add, remove,
+			toggle (force add or remove), contains, replace
+		</div>
+		<hr />
+		<h1>DOM Manipulation with jQuery</h1>
 	</body>
 </html>
