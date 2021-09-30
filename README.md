@@ -15,7 +15,8 @@
 * createElement()
 
 ### DOM Manipulation with jQuery
-* TBD
-
-## Great jQuery Videos, Tutorials & Resources
-* TBD
+* Selecting elements by their IDs, classes, and tags
+* html()
+* attr()
+* css()
+* Ajax

@@ -67,3 +67,16 @@ $(function () {
 		.attr('role', 'presentation')
 		.css({ color: 'red' });
 });
+
+// Ajax w/ jQuery
+$.ajax({
+	url: 'https://jsonplaceholder.typicode.com/users',
+	data: {
+		name: 'Ervin Howell',
+	},
+	success: function (result) {
+		$('#api-call').html(
+			'Here\'s the email for ' + result[0].name + ': <br>' + result[0].email
+		);
+	},
+});
