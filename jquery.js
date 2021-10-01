@@ -50,9 +50,9 @@ btn.addEventListener('click', function () {
 	console.log(divEl6);
 });
 
-// jQuery DOM manipulation
+// DOM manipulation (with jQuery!)
 // Getting an element by its ID like "getElementsById()".
-// Manipulating the HTML like "innerHTML".
+// Manipulating the HTML like "innerHTML". This works for HTML documents, but NOT XML.
 $(function () {
 	$('#jquery-element').html(
 		'We selected <b>this</b> div by its ID, and then we update its content with "html".'
@@ -60,7 +60,7 @@ $(function () {
 });
 
 // Getting an element by its ID, class, or element type like "querySelector()", "querySelectorAll()", and "classList".
-// Manipulating the CSS like "style"
+// Manipulating the selected elements' CSS like "style".
 // And manipulate its Attributes, like "setAttribute()", "getAttribute()", and "hasAttribute()" .. you can chain all these methods together!
 $(function () {
 	$('#jquery-element, .jquery-element, h3')
@@ -69,6 +69,7 @@ $(function () {
 });
 
 // Ajax w/ jQuery
+// How we're able to perform asynchronous HTTP requests with jQuery.
 $.ajax({
 	url: 'https://jsonplaceholder.typicode.com/users',
 	data: {
@@ -76,7 +77,17 @@ $.ajax({
 	},
 	success: function (result) {
 		$('#api-call').html(
-			'Here\'s the email for ' + result[0].name + ': <br>' + result[0].email
+			"Here's the email for " + result[0].name + ': <br>' + result[0].email
 		);
 	},
 });
+
+// Other ways to use jQuery
+// hide() => Hide selected elements
+// height(px) => Make selected elements # pixels high
+// $(document).ready() => Prevent code from running before the document is finished loading
+// noConflict() => Used to deal with name conflicts
+// toggleClass() => Switch between adding/removing one or more classes for CSS from selected elements
+// remove() & detach() => Both methods can remove selected elements
+// parent() => Returns the direct parent element of the selected element
+// animate() => Animate CSS properties that contain numeric values
