@@ -81,13 +81,3 @@ $.ajax({
 		);
 	},
 });
-
-// Other ways to use jQuery
-// hide() => Hide selected elements
-// height(px) => Make selected elements # pixels high
-// $(document).ready() => Prevent code from running before the document is finished loading
-// noConflict() => Used to deal with name conflicts
-// toggleClass() => Switch between adding/removing one or more classes for CSS from selected elements
-// remove() & detach() => Both methods can remove selected elements
-// parent() => Returns the direct parent element of the selected element
-// animate() => Animate CSS properties that contain numeric values
